@@ -1,0 +1,32 @@
+body {
+	height: 100vh;
+	display: grid;
+	place-content: center;
+	background-color: hsl(150, 74%, 51%);
+	color: hsl(0, 0%, 100%);
+}
+h1 {
+	text-align: center;
+	font-family: arial;
+	font-size: 3rem;
+	line-height: 1.5;
+	letter-spacing: 15px;
+	text-shadow: 0 1px 0 hsl(0, 0%, 94%), 0 2px 0 hsl(0, 0%, 94%), 0 3px 0 hsl(0, 0%, 94%), 0 4px 0 hsl(0, 0%, 94%),
+		0 30px 5px hsla(0, 0%, 0%, 0.102);
+	animation: float 3s linear infinite;
+	animation-direction: alternate;
+}
+@keyframes float {
+	from {
+		transform: rotate(5deg);
+	}
+
+	to {
+		transform: rotate(-5deg);
+	}
+}
+@media screen and (min-width: 600px) {
+	h1 {
+		font-size: 6rem;
+	}
+}
